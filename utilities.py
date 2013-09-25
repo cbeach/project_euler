@@ -36,8 +36,6 @@ def optimized_prime_sieve():
     yield 2
     for q in itertools.islice(itertools.count(3), 0, None, 2):
         p = D.pop(q, None)
-        print q
-        print p
         if p is None:
             D[q * q] = p
             yield q
