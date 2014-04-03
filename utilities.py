@@ -48,9 +48,18 @@ def time_prime_sieve(iterations=100):
 
     for i in range(iterations):
         start = time.time()
-        primes = list(itertools.takewhile(lambda p: p < (i * 1000), optimized_prime_sieve()))
+        list(itertools.takewhile(lambda p: p < (i * 1000), optimized_prime_sieve()))
         t = time.time() - start
         cprint('{}: {}'.format(i * 1000, t), 'yellow')
+
+
+def all_integer_factors(n):
+    """
+    Thanks to http://stackoverflow.com/users/500584/agf for this little algorithm
+
+    """
+    return set(reduce(list.__add__, ([i, n // i] for i in range(1, int(n ** 0.5) + 1)
+                                     if n % i == 0)))
 
 
 if __name__ == '__main__':

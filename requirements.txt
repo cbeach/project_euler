@@ -1,3 +1,5 @@
+argparse==1.2.1
+ipython==2.0.0
 line-profiler==1.0b3
 termcolor==1.1.0
 wsgiref==0.1.2
