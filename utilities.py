@@ -53,7 +53,7 @@ def time_prime_sieve(iterations=100):
         cprint('{}: {}'.format(i * 1000, t), 'yellow')
 
 
-def all_integer_factors(n):
+def integer_factorization(n):
     """
     Thanks to http://stackoverflow.com/users/500584/agf for this little algorithm
 
