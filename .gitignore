@@ -4,3 +4,8 @@
 *.swp
 *.o
 *.e
+
+*.hi
+
+temp
+temp.*

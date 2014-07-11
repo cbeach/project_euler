@@ -132,6 +132,21 @@ int main() {
             big_numbers[i][j] = big_numbers[i][j] ^ big_numbers[i][49 - j];
         }
     }
+    int* remainders;
+    int digits[10] = { 0 };
+    int sum = 0;
+    for(int i = 0; i < 10; i++) {
+        sum = 0;
+        for(int j = 0; j < 100; j++) {
+            sum += big_numbers[j][i];
+        }
+        remainders = split_integer(sum);
+        for(int j = 0; j < 3; j++) {
+            if(j + 9 < 10) {
+                
+            }
+        }
+    }
 
     return 0; 
 }
