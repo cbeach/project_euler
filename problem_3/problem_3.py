@@ -57,6 +57,3 @@ for factor in prime_factors:
     print factor
 
 print max(prime_factors)
-
-
-
